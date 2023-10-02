@@ -58,7 +58,7 @@ public class Library
     }
 }
 
-//This code gives back the name of the book that fullfills both conditions
+//This code gives back the name of the book that fullfills both condition
 public class Program
 {
     public static void Main()

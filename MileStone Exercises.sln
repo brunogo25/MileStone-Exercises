@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MileStone Exercise 1", "Mil
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MileStone Exercise 2", "MileStone Exercise 2\MileStone Exercise 2.csproj", "{06F8F708-8176-4BF7-AD6A-8CF33219F297}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MileStone Exercise3", "MileStoneExerise3\MileStone Exercise3.csproj", "{41FE0F7D-28B8-4FDC-9F84-EB2AC5DA0CB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MileStone Exercise 3", "MileStoneExerise3\MileStone Exercise 3.csproj", "{41FE0F7D-28B8-4FDC-9F84-EB2AC5DA0CB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
