@@ -45,6 +45,7 @@ public class Library
 
     public List<Book> FindBooks(string searchString)
     {
+        // Split the search string by '&'
         var searchQueries = searchString.Split(new[] { " & " }, StringSplitOptions.None)
                                         .Select(x => x.Trim('*')).ToList();
 
@@ -56,30 +57,31 @@ public class Library
                 b.PublicationYear.ToString().Contains(query))).ToList();
     }
 }
+
+//This code gives back the name of the book that fullfills both conditions
 public class Program
 {
     public static void Main()
     {
         var library = new Library();
-        string input = 
-            @"Book:
-                Author: Brian Jensen
-                Title: Texts from Denmark
-                Publisher: Gyldendal
-                Published: 2001
+        string input = @"Book:
+Author: Brian Jensen
+Title: Texts from Denmark
+Publisher: Gyldendal
+Published: 2001
 
-             Book:
-                Author: Peter Jensen
-                Author: Hans Andersen
-                Title: Stories from abroad
-                Publisher: Borgen
-                Published: 2012";
+Book:
+Author: Peter Jensen
+Author: Hans Andersen
+Title: Stories from abroad
+Publisher: Borgen
+Published: 2012";
 
         library.ReadBooks(input);
         var foundBooks = library.FindBooks("*20* & *peter*");
         foreach (var book in foundBooks)
         {
-            Console.WriteLine($"Title: {book.Title}, Publisher:{book.Publisher}, Published: {book.PublicationYear}");
+            Console.WriteLine($"Title: {book.Title}");
         }
     }
 }
